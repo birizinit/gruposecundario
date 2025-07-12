@@ -37,7 +37,7 @@ threading.Thread(target=start_loop, daemon=True).start()
 # === FUNÇÃO ASSÍNCRONA PARA ENVIAR MENSAGEM COM BOTÃO ===
 async def enviar_mensagem(texto):
     teclado = InlineKeyboardMarkup([
-        [InlineKeyboardButton("👨🏻‍💻 Abrir Corretora", url="https://traderoom.asafebroker.com/?code=9649")]
+        [InlineKeyboardButton("👨🏻‍💻 Abrir Corretora", url="https://app.asafebroker.com/auth/register?affiliateId=01JZKQMT5R8F2M9VMXSQD93X8F")]
     ])
     await bot.send_message(chat_id=CHAT_ID, text=texto, parse_mode="Markdown", reply_markup=teclado)
 
